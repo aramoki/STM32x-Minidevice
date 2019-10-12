@@ -1,0 +1,1 @@
+void showmenu(int seek,int press, int * seekptr);

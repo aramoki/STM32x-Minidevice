@@ -1,0 +1,16 @@
+--cpu Cortex-M3
+".\main.o"
+".\stm32f10x_gpio.o"
+".\stm32f10x_rcc.o"
+".\stm32f10x_adc.o"
+".\stm32f10x_flash.o"
+".\system_stm32f10x.o"
+".\startup_stm32f10x_md_vl.o"
+".\sht11.o"
+".\hih5031.o"
+".\lcd_display.o"
+".\flash.o"
+".\armenu.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\minidevice.map" -o .\minidevice.axf
